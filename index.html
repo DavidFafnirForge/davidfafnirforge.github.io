@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes Agent — intégration Gmail et Google Agenda</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         max-width: 46rem; margin: 3rem auto; padding: 0 1.25rem; line-height: 1.6; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  code { background: rgba(128,128,128,.15); padding: .1rem .3rem; border-radius: .25rem; }
+  footer { margin-top: 3rem; font-size: .85rem; opacity: .7; }
+</style>
+</head>
+<body>
+
+<h1>Hermes Agent</h1>
+<p class="sub">Intégration personnelle avec Gmail et Google Agenda</p>
+
+<p>
+  Cette application est une <strong>intégration personnelle</strong>, exploitée par un
+  particulier pour son propre compte Google. Elle n'est pas distribuée publiquement et
+  ne compte qu'un seul utilisateur : son propriétaire, qui l'a lui-même autorisée.
+</p>
+
+<h2>Ce que fait l'intégration</h2>
+<ul>
+  <li><strong>Gmail</strong> — lire les messages pour les résumer, les rechercher ou en
+      extraire les informations demandées par l'utilisateur, et envoyer des messages
+      rédigés sur sa demande explicite.</li>
+  <li><strong>Google Agenda</strong> — consulter les événements à venir (rendez-vous,
+      conflits horaires) et créer, modifier ou supprimer des événements sur demande.</li>
+</ul>
+
+<h2>Ce qu'elle ne fait pas</h2>
+<ul>
+  <li>Aucun accès au Drive, aux Contacts, aux Feuilles de calcul ou aux Documents.</li>
+  <li>Aucune revente, aucun partage ni aucune communication de données à des tiers à des
+      fins publicitaires ou commerciales.</li>
+  <li>Aucune collecte en arrière-plan : l'intégration agit uniquement lorsque son
+      propriétaire le lui demande.</li>
+</ul>
+
+<h2>Comment fonctionne l'accès</h2>
+<p>
+  L'accès repose sur une autorisation OAuth 2.0 que l'utilisateur accorde lui-même
+  depuis son compte Google. Les échanges ont lieu directement entre le serveur personnel
+  de l'utilisateur et les API Google. L'autorisation peut être révoquée à tout moment
+  depuis <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+</p>
+<p>
+  Le détail des données traitées, de leur conservation et des moyens de révocation figure
+  dans la <a href="privacy.html">politique de confidentialité</a>.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Pour toute question :
+  <a href="mailto:david.fafnir.forge@gmail.com">david.fafnir.forge@gmail.com</a>
+</p>
+
+<footer>
+  Utilisation des données reçues des API Google conforme à la
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">politique
+  relative aux données utilisateur des services API Google</a>, y compris ses exigences
+  d'utilisation limitée.
+</footer>
+
+</body>
+</html>
